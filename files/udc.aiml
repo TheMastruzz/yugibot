@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+ 
+<category>
+    <pattern>ciao ^</pattern>
+    <template>Ciao! Questo bot ti guiderà nella tua esperienza nel mondo di Yu-Gi-Oh!, hai mai giocato prima?
+    <button><text>si</text><postback>positivo</postback></button>
+    <button><text>no </text> <postback>negativo</postback></button>
+    </template>
+</category>
+
+<category>
+    <pattern>aiuto ^</pattern>
+    <template>Ciao! Questo bot ti guiderà nella tua esperienza nel mondo di Yu-Gi-Oh!, hai mai giocato prima?
+    <button><text>si</text><postback>positivo</postback></button>
+    <button><text>no </text> <postback>negativo</postback></button>
+    </template>
+</category>
+
+<category>
+    <pattern>help ^</pattern>
+    <template>Ciao! Questo bot ti guiderà nella tua esperienza nel mondo di Yu-Gi-Oh!, hai mai giocato prima?
+    <button><text>si</text><postback>positivo</postback></button>
+    <button><text>no </text> <postback>negativo</postback></button>
+    </template>
+</category>
+
+<category>
+    <pattern>aiuro ^</pattern>
+    <template>Ciao! Questo bot ti guiderà nella tua esperienza nel mondo di Yu-Gi-Oh!, hai mai giocato prima?
+    <button><text>si</text><postback>positivo</postback></button>
+    <button><text>no </text> <postback>negativo</postback></button>
+    </template>
+</category>
+
+
+    <category>
+        <pattern>positivo</pattern>
+        <template>Bene! Per iniziare a giocare registrati su questo sito:
+         
+         <br></br>hai già un deck da utilizzare?(RICORDATI CHE PER COSTRUIRE UN DECK HAI BISOGNO DI ESSERE REGISTRATO AL SITO)<button><text>si</text><postback>si deck</postback></button>
+    <button><text>no</text><postback>no deck</postback></button>
+    <button><text>inizia a giocare</text><url>https://duelingnexus.com/</url></button>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>negativo</pattern>
+        <template>ok, vuoi sapere come funziona il gioco?
+        <button>
+            <text>si</text>
+            <postback>si funzionamento</postback>
+        </button>
+        <button>
+            <text>no</text>
+            <postback>no funzionamento</postback>
+        </button></template>
+    </category>
+
+
+<category>
+    <pattern>si funzionamento</pattern>
+    <template>
+        <button>
+            <text>Introduzione a Yu-Gi-Oh!</text>
+            <url>https://img.yugioh-card.com/ygo_cms/ygo/all/uploads/IT-YS17-Beginner-Guide.pdf</url>
+        </button>
+        Ora che sai come funziona il gioco, Vuoi iniziare a giocare?
+        <button>
+            <text>Inizia a giocare</text>
+            <postback>positivo</postback>
+        </button>
+    </template>
+</category>
+
+
+<category>
+    <pattern>no funzionamento</pattern>
+    <template>ok puoi iniziare a giocare da questo sito
+    <br></br>hai già un deck da utilizzare?<button><text>si</text><postback>si deck</postback></button>
+    <button><text>no</text><postback>no deck</postback></button>
+    <button><text>inizia a giocare</text><url>https://duelingnexus.com/</url></button></template>
+</category>
+
+
+<category>
+    <pattern>si deck</pattern>
+    <template>bene,allora puoi costruire il tuo mazzo da qui ed iniziare a giocare, buon divertimento <button><text>costruisci il tuo deck</text><url>https://duelingnexus.com/decks</url></button></template>
+</category>
+
+
+<category>
+    <pattern>no deck</pattern>
+    <template>ok,qui puoi scegliere il deck adatto a te.<button><text>ygroprodeck</text><url>https://ygoprodeck.com</url></button>
+    vuoi istruzioni per come importare il deck?<button><text>si</text><postback>si import</postback></button>
+    <button><text>no</text><postback>no import</postback></button>
+    <button><text>duelingnexus</text><url>https://duelingnexus.com/decks</url></button></template>
+</category>
+
+
+<category>
+    <pattern>si import</pattern>
+    <template>clicca su download e ti scaricherà il file contentente il deck<image>https://telegra.ph/file/07f2b62581755c50d8180.jpg</image><br></br>arrivato a questa schermata clicca "import deck" e avrai il tuo deck importato, ora sei pronto a giocare. Buon divertimento :)<image>https://telegra.ph/file/31a7d8bffe153da374a70.jpg</image>
+    <button><text>duelingnexus</text><url>https://duelingnexus.com/decks</url></button>
+    <button><text>ygoprodeck</text><url>https://ygoprodeck.com</url></button></template>
+</category>
+
+
+<category>
+    <pattern>no import</pattern>
+    <template> bene, allora scarica il tuo deck e buon divertimento :)<button><text>duelingnexus</text><url>https://duelingnexus.com/decks</url></button>
+    <button><text>ygoprodeck</text><url>https://ygoprodeck.com</url></button></template>
+</category>
+
+
+<category>
+    <pattern>grazie</pattern>
+    <template>prego </template>
+</category>
+</aiml>
